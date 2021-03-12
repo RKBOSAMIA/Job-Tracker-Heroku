@@ -3,7 +3,7 @@ const router = express.Router();
 const sqlite3 = require('sqlite3').verbose();
 const url = require('url');
 
-let db_path = '../SQL_DB/jobOpportunites.db';
+let db_path = 'jobOpportunites.db';
 let db = new sqlite3.Database(db_path,(err)=>{
   if (err){
       return console.error(err.message);
