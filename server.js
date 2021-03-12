@@ -9,7 +9,7 @@ var homeRouter = require('./routes/home')
 var resultRouter = require('./routes/results');
 
 app.use(cors({
-  origin : "http://localhost:3000",
+  origin : ["http://localhost:3000","https://job-trackerr.herokuapp.com/"],
   credentials:true
 }));
 app.use(morgan('common'));
